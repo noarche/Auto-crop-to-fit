@@ -2,6 +2,9 @@
 
 ## Automatically crop the extra space out in your transparent images. Crop to Fit Transparent images in bulk. 
 
+![image](https://github.com/user-attachments/assets/6b7c8faf-927d-45e4-999f-daaf1b22125d)
+
+## Look professional and save space in seconds!
 
 ---------------------------------------------------------------------------------------------------
 
