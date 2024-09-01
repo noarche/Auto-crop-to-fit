@@ -6,9 +6,6 @@ from tqdm import tqdm
 from colorama import Fore, Style, init
 import time
 
-
-print("AutoCrop - This script will ask for a directory and automatically crop all transparent image background -- the blank space around the img -- so that the image fits perfectly. Crop to fit - Batch Process.")
-
 # Initialize colorama
 init(autoreset=True)
 
