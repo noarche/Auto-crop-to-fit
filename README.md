@@ -1,15 +1,15 @@
 ![image](https://github.com/user-attachments/assets/99797d06-7ac5-4d43-b8cf-7011f5d907d6)
 
-Automatically crop the extra space out in your transparent images. Crop to Fit Transparent images in bulk. 
+## Automatically crop the extra space out in your transparent images. Crop to Fit Transparent images in bulk. 
 
 
 ---------------------------------------------------------------------------------------------------
 
 The portable .exe file size is 2.54GB and is located inside a .rar archive found in the the directory ./portable-exe/   
 
-Clone this archive to get all the parts of the file easily. 
+Clone this archive to get all the parts of the file easily. `git clone https://github.com/noarche/Auto-crop-to-fit`
 
-Once download is complete open part1 with WinRar. Extract anywhere, no installation required.
+Once download is complete open `./portable-exe/AutoCrop_x64_i386_Win_portable.part001` with [WinRar](https://www.win-rar.com/download.html?&L=0). Extract anywhere, no installation required.
 
 
     File: AutoCrop.exe
