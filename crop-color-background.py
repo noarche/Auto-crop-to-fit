@@ -75,7 +75,7 @@ def crop_logo(image_path):
     return img
 
 def process_images(input_dir):
-    supported_formats = ('.png', '.webp')
+    supported_formats = ('.png', '.webp', '.jpg', '.jpeg')  # Added .jpg and .jpeg
     processed_count = 0
     total_files = len([f for f in os.listdir(input_dir) if f.lower().endswith(supported_formats)])
     original_size = 0
