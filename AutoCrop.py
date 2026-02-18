@@ -5,7 +5,7 @@ from tqdm import tqdm
 from collections import Counter
 from colorama import Fore, init
 
-# Initialize colorama
+
 init(autoreset=True)
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
@@ -15,17 +15,16 @@ def get_edge_color(img, tolerance=5):
     w, h = img.size
     edge_pixels = []
 
-    # Top and bottom rows
     for x in range(w):
         edge_pixels.append(pixels[x, 0])
         edge_pixels.append(pixels[x, h - 1])
     
-    # Left and right columns
+
     for y in range(1, h - 1):
         edge_pixels.append(pixels[0, y])
         edge_pixels.append(pixels[w - 1, y])
 
-    # Count colors
+
     counter = Counter(edge_pixels)
     most_common_color, _ = counter.most_common(1)[0]
     return most_common_color
@@ -63,7 +62,7 @@ def crop_logo(image_path):
         print(Fore.RED + f"Failed to open image {image_path}: {e}")
         return None
 
-    # If image has transparency, crop by alpha
+
     if any(pixel[3] < 255 for pixel in img.getdata()):
         bbox = img.split()[-1].getbbox()
         if bbox:
@@ -71,7 +70,7 @@ def crop_logo(image_path):
             return img.crop((max(0, left - 1), max(0, upper - 1),
                              min(img.width, right + 1), min(img.height, lower + 1)))
     
-    # Otherwise, crop by background color
+
     bg_color = get_edge_color(img)
     return crop_by_background_color(img, bg_color)
 
@@ -104,7 +103,7 @@ def process_images(input_dir):
         try:
             ext = file.split('.')[-1].lower()
             if ext in ['jpg', 'jpeg']:
-                cropped_image = cropped_image.convert("RGB")  # JPEG cannot have alpha
+                cropped_image = cropped_image.convert("RGB")  
                 save_format = "JPEG"
             else:
                 save_format = ext.upper()
@@ -145,3 +144,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
