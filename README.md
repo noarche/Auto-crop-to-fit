@@ -12,7 +12,7 @@
 
 ---------------------------------------------------------------------------------------------------
 
-The portable .exe file size is 2.54GB and is located inside a .rar archive found in the the directory ./portable-exe/   
+The portable .exe file size is 3.4GB and is located inside a .rar archive found in the the directory ./portable-exe/   
 
 Clone this archive to get all the parts of the file easily. `git clone https://github.com/noarche/Auto-crop-to-fit`
 
